@@ -1,0 +1,13 @@
+{% extends "students_records.html" %}
+
+{% block data %}
+	 
+	{% for l in list_data_sessions %}
+	 <TR align="center">
+        <td>{{l.name}}</td><td>{{l.last}}</td><td>{{l.email}}</td><td>{{l.sex}}</td>
+		<td>{{l.bday}}</td><td>J.Reyes </td><td>{{l.learning_style}}</td><td>{{l.time_init}}</td><td>{{l.time_end}}</td>
+		<td>{{l.time_conected}}</td><td>{{l.number_scrolls}}</td><td>{{l.number_clicks}}</td>
+	</TR>
+	{% endfor %}
+
+{% endblock %}
